@@ -1,0 +1,59 @@
+﻿body 
+{
+    direction:rtl;
+}
+.container{
+    margin-right: 2%;
+    
+}
+.dragOver {
+    /*width: 350px;*/
+    /*height: 70px;*/
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    margin:2px;
+    /*background-color: azure;*/
+}
+
+.dragItems{
+    margin: 15px;
+    font-weight:bold;
+}
+
+#mybtn {
+    position:absolute;
+    margin: 750px 813px;
+}
+
+.box001 {
+    float: right;
+    width: 75px;
+    height: 15px;
+    margin: 12px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.box002 {
+    float: right;
+    width: 75px;
+    height: 15px;
+    margin: 12px;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+GridView{
+    direction: rtl;
+}
+
+#addNewItemsBtn {
+    margin: auto;
+    display: block;
+}
+
+.myButton{
+    background-color:coral;
+}
+
+

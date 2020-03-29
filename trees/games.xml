@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<routs>
+  <rout code="100" publish="true" IDcounter="12" matchCounter="6" name="גבעת המבתר">
+    <item id="1" type="quote" match="1" isText="true">"ציטוט שדה מוקשים</item>
+    <item id="2" type="challenge" match="1" isText="true">שדה מוקשים</item>
+    <item id="3" type="quote" match="2" isText="true">"ציטוט טנקים</item>
+    <item id="4" type="challenge" match="2" isText="true">טנקים</item>
+    <item id="5" type="quote" match="3" isText="true">"ציטוט פציעות</item>
+    <item id="6" type="challenge" match="3" isText="true">פציעות</item>
+    <item id="7" type="quote" match="4" isText="true">"ציטוט ציוד</item>
+    <item id="8" type="challenge" match="4" isText="true">ציוד</item>
+    <item id="9" type="quote" match="5" isText="true">"ציטוט מורל</item>
+    <item id="10" type="challenge" match="5" isText="true">מורל</item>
+    <item id="11" match="6" type="quote" isText="true">%d7%a6%d7%99%d7%98%d7%95%d7%98+1</item>
+    <item id="12" match="6" type="challenge" isText="true">%d7%90%d7%aa%d7%92%d7%a8+1+</item>
+  </rout>
+  <rout code="101" publish="true" IDcounter="2" matchCounter="1" name="תל אל פול">
+    <item id="1" type="quote" match="1" isText="true">"ציטוט שדה מוקשים</item>
+    <item id="2" type="challenge" match="1" isText="true">שדה מוקשים</item>
+  </rout>
+</routs>

@@ -1,0 +1,69 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מפה</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+
+
+</head>
+<body>
+    <div id="container">
+        <h1>מפת איזורי הכיבוש של חטיבת הראל</h1>
+        <p>לחצו על גבעת המבתר כדי לראות יותר ולהתחיל משימות</p>
+        <br />
+
+        <input id="goToGameBtn" type="button" hidden="true" class="myButton" value="משימות גבעת המבתר" onclick="goToGivhaGame('100')" style="margin-right:277px; margin-top:334px; position: absolute; z-index:1;" />
+        <br />
+
+
+        <div id="mapVideocontainer" style="position: relative; width: 906px; height: 468px;">
+            <video id="sampleVideo" onload="pauseVid()" style="position: absolute; width: 906px; height:468px;">
+                <source id="mp4" src="videos/zoom Mivtar.mp4" type="video/mp4" />
+                <p>HTML5 Video is not supported by this browser.</p>
+            </video>
+            <img src="icons/1x1mapImg.png" usemap="#mymap" style="position: absolute; width: 906px; height: 468px;" />
+        </div>
+
+
+        <map name="mymap">
+            <area target="" alt="גבעת המבתר" title="mivtarIcon" coords="746,322,27" shape="circle" onclick="startvid()">
+            <area target="" alt="גבעת המבתר" title="mivtarTxt" coords="692,360,796,379" shape="rect" onclick="startvid()">
+        </map>
+
+        <script>
+            //עצירת הסרטון לאחר שנטען
+            var thisVid = document.getElementById("sampleVideo");
+            function pauseVid() {
+                thisVid.pause();
+            }
+            //תחילת הסרטון אחרי לחיצה על איזור רצוי
+            function startvid() {
+                thisVid.play();
+                setTimeout(function () {//הופעה של כפתור לאחר שהסתיימה אנימציית הסרטון
+
+                    document.getElementById("goToGameBtn").hidden = false;
+                }, 4000);
+            }
+            function goToGivhaGame() {//בלחיצה על כפתור, מעבר לעמוד המשחק התאמה של ציטוטים
+           
+                location.replace("game.aspx")
+            }
+
+        </script>
+
+
+
+    </div>
+</body>
+</html>
